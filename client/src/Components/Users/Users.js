@@ -6,7 +6,7 @@ import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 const Users = ({ editHandlerCall }) => {
   let [contacts, setContacts] = useState([]);
   useEffect(() => {
-    fetch("mongodb://localhost:27017/contacts", {
+    fetch("https://contactbookwebapp.herokuapp.com/contact", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })
@@ -27,7 +27,7 @@ const Users = ({ editHandlerCall }) => {
     } else {
       id = e.target.id;
     }
-    fetch(`mongodb://localhost:27017/contacts/deletecontact?id=${id}`, {
+    fetch(`https://contactbookwebapp.herokuapp.com/deletecontact?id=${id}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

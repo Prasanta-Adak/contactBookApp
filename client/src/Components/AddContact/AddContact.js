@@ -17,7 +17,7 @@ const AddContact = ({ backClicked }) => {
     if (name === "" || number === "" || mail === "") {
       return;
     } else {
-      fetch("mongodb://localhost:27017/contacts/addcontact", {
+      fetch("https://contactbookwebapp.herokuapp.com/addcontact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

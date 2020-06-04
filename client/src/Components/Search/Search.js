@@ -7,7 +7,7 @@ const Search = () => {
   const [searchContact, setSearchContact] = useState("");
   let [data, setData] = useState([]);
   useEffect(() => {
-    fetch("mongodb://localhost:27017/contacts", {
+    fetch("https://contactbookwebapp.herokuapp.com/contact", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

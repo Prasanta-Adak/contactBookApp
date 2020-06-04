@@ -18,7 +18,7 @@ app.use(cors());
 
 // DB connection
 mongoose.connect(
-  "mongodb://localhost:27017/contacts",
+  process.env.DATABASE_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to DB");

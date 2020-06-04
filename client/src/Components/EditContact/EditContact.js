@@ -10,7 +10,7 @@ function EditContact({ editContactId, backEditClicked }) {
 
   useEffect(() => {
     fetch(
-      `mongodb://localhost:27017/contacts/editcontactdata?id=${editContactId}`,
+      `https://contactbookwebapp.herokuapp.com/editcontactdata?id=${editContactId}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@ function EditContact({ editContactId, backEditClicked }) {
       return;
     } else {
       fetch(
-        `mongodb://localhost:27017/contacts/editcontact?id=${editContactId}`,
+        `https://contactbookwebapp.herokuapp.com/editcontact?id=${editContactId}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
