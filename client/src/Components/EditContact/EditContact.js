@@ -53,6 +53,7 @@ function EditContact({ editContactId, backEditClicked }) {
             setName("");
             setNumber("");
             setMail("");
+            alert("Successfully Update");
           }
         })
         .catch((err) => {
