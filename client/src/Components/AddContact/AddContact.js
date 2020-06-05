@@ -32,6 +32,7 @@ const AddContact = ({ backClicked }) => {
             setName("");
             setNumber("");
             setMail("");
+            alert("Successfully Add The Contact");
           }
         })
         .catch((err) => {
