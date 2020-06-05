@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="box">
-        <h1 className="phonebook-title">PHONEBOOK</h1>
+        <h1 className="phonebook-title">CONTACTBOOK</h1>
         {<>
           {
             showEditForm === true ? < EditContact editContactId={editContactId} backEditClicked={backEditClicked} /> :
